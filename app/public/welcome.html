@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
+        :root {
+            
+            
+            --text-color: white;
+         
+            --box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+
+            --bg-color: hsl(240 10% 3.9%);
+            --component-bg: hsl(240 10% 6.5%);
+
+            --border: #333;
+
+            --primary-color: #16697A;
+
+            --radius: 0.5rem;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .welcome-box {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            
+            padding: 32px;
+            align-items: center;
+            border-radius: 8px;
+            box-shadow: var(--box-shadow);
+            text-align: center;
+            
+        }
+
+        .welcome-box h1 {
+            font-size: 40px;
+            font-weight: 700;
+            color: var(--primary-color);
+            
+        }
+    </style>
+
+    <script
+  src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs"
+  type="module"
+></script>
+</head>
+<body>
+    <div class="welcome-box">
+        <dotlottie-player
+        src="https://lottie.host/6cb629fd-6f19-4935-b89b-865c61fcda66/Rp6cUmvT2M.lottie"
+        background="transparent"
+        speed="1"
+        style="width: 300px; height: 300px"
+        loop
+        autoplay
+      ></dotlottie-player>
+    
+        <h1>Welcome to Docker Application</h1>
+        <p style="margin-top: 8px; color: var(--text-color); font-size: 16px;">Your login was successful 🎉</p>
+    </div>
+    
+</body>
+</html>
